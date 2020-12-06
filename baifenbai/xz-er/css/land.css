@@ -1,0 +1,138 @@
+*{
+	padding: 0;margin: 0;
+}
+body{
+	background-color: white;
+}
+.border_1{
+	position: relative;
+	top: 5%;
+	margin: 0 auto;
+	text-align: center;
+	width: 560px;
+	height: 350px;
+	border: 1px solid #9C9C9C;
+	border-top: 0px;
+	margin-bottom: 100px;
+}
+.d1{
+	border: none;
+	width: 100px;
+	   
+}
+.xia_1{
+  background-color: white;
+	width: 160px;
+	display: block;
+	position: absolute;
+	top: 82px;left: 40px;
+	border-bottom: none;
+	cursor: pointer;
+	z-index: 1;
+}
+.xia_2{
+  background-color: white;
+	width: 50px;
+	display:  block;
+	position: absolute;
+	top:152px;left: 40px;
+	border-bottom: none;
+	cursor: pointer;
+	z-index: 1;
+}
+span{
+	color: red;
+}
+input{
+	width: 500px;
+	height: 40px;
+	border-radius: 7px;
+	border: 1px solid #9C9C9C;
+	outline: none;
+}
+ul{
+	text-align: center;
+}
+.dl{
+	color: white;
+	font-weight: bold;
+  /* display: inline-block; */
+	text-align: center;
+	line-height: 50px;
+	/* width: 280px; */
+	/* height: px; */
+	border: 1px solid #CECECE;
+	background-color: #444444;
+	border-right: none;
+	border-left: none;
+	cursor: pointer;
+	
+}
+.zc{
+	font-weight: bold;
+	/* display: inline-block; */
+	text-align: center;
+	line-height: 50px;
+	width: 280px;
+	height: 50px;
+	border: 1px solid #CECECE;
+	border-right: none;
+	border-left: none;
+	cursor: pointer;
+	z-index: 0;
+}
+.zh_1{
+	position: relative;
+	top: 18px;
+}
+.zh_2{
+	position: relative;
+	top: 48px;
+}
+.an_dl{
+	margin-top: 80px;
+	width: 250px;
+	height: 45px;
+	background-color: #444444;
+	color: white;
+	font-weight: bold;
+	font-size: 14;
+	cursor: pointer;
+}
+p{
+	margin-top: 10px;
+	color: FA7026;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.lt{
+	padding: 0px 10px;
+	color: #888888;
+}
+.sx{
+	text-decoration: none;
+	color: #444444;
+	font-size: 10px;
+	font-weight: bold;
+}
+.bg{
+	background-color: F7F5F5;
+	padding: 15px;
+}
+@media (max-width:999px) {
+	
+}
+@media (min-width:1000px) {
+	.an_dl:hover{
+		background-color: white;
+		color: #444444;
+	}
+	.sx{font-size: 20px;}
+	.xia_1{
+		font-size: 14px;
+	}
+	.xia_2{
+		font-size: 14px;
+	}
+}

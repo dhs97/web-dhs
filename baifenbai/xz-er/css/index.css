@@ -1,0 +1,233 @@
+.gd{
+	font-weight: bold;
+	color: #FA7026;
+	text-align: right;
+}
+.ch{
+	z-index: 16;
+}
+.d4{
+	width: 100%;
+	height: 170px;
+	}
+	.dian{
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	left: 0;
+	z-index: 15;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	list-style: none;
+	}
+.dian li{
+	width: 0.5rem;height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 0.3rem;
+	margin-right: 0.3rem;
+}
+.dian li.active{
+	background-color: #FA7026;
+}
+.carousel-control-next,.carousel-control-prev{
+	width: 4%;height: 20%;
+	top: 40%;
+	border-radius: 0.25rem;
+	/* background: #aaa; */
+}
+.carousel-control-prev{left: 0.3rem;}
+.carousel-control-next{right: 0.3rem;}
+
+.my_bttom_border{
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+.top_height{
+	background: #e8e8e8;height: 377px;}
+.bottom_height{
+	width: 100%;height: 100%;
+	    padding: 15px 0;
+	    margin: 0 .8445% 2%;
+	    border: solid 1px #dedede;
+	    border-radius: 15px;	
+}
+.bg_img_p4{
+	overflow: hidden;
+}
+.w-55{width: 55%;}
+.img_p1{
+	float: right;
+	margin-right: 30px;
+	margin-top: -250px;
+	transition: transform 1s;
+}
+.img_p1:hover{transform: scale(1.1);}
+@media (min-width:567px) and (max-width:767.99px) {
+	.img_p1{margin-top: -300px;}
+}
+@media (min-width:992px) and (max-width:1199.99px) {
+	.img_p1{margin-top: -300px;}
+}
+.img_p2{
+	float: right;
+	margin-right: 40px;
+	margin-top: -230px;
+	transition: transform 1s;
+}
+.img_p2:hover{
+	transform: scale(1.1);
+}
+.img_p3{
+	float: right;
+	margin-right: 30px;
+	margin-top: -200px;
+	transition: transform 1s;
+}
+.img_p3:hover{
+	transform: scale(1.1);
+}
+.img_p4{
+	width: 100%;
+	height: 200px;
+	/* transform: 1s; */
+	transition: .3s ease 0s;
+	}
+.img_p5{
+	width: 100%;
+	height: 200px;
+}
+.img_p6{
+	width: 100%;
+	height: 200px;
+}
+.bg_img_p5{
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: transparent;
+	background: saddlebrown; 
+	/* background: url(../百分百%20_%20baifenbai_files/0402-S01L07-PR01.jpg); */
+}
+
+.bg_img_p5:hover{
+	background-color: white;
+	opacity: 0.7;/*给图片悬停透明*/
+}
+.bg_img_p6:hover{
+	background-color: white;
+	opacity: 0.7;/*给图片悬停透明*/
+}
+.img_p4:hover{
+	transform: scale(1.2);}
+a, a:hover {
+    text-decoration: none;
+}
+.container_1 {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container_1 {
+    max-width: 566px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_1 {
+    max-width: 758px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container_1 {
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container_1 {
+    max-width: 1190px;
+  }
+}
+
+/* .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+.left{
+				position: absolute;
+				top: 50%;left: 5px;
+				width: 20px;
+			  height: 20px;
+			  border-bottom: solid 3px red;
+			  border-left: solid 3px red;
+				transform: rotate(45deg);
+			  opacity: 1;		
+				
+			}
+.right{
+				position: absolute;
+				top: 50%;right: 5px;
+				width: 20px;
+				height: 20px;
+				border-top: solid 3px red;
+				border-right: solid 3px red;
+				transform: rotate(45deg);
+				opacity: 1;	
+				}	
+.dx_block{
+	display:inline-block;
+	border: 1px solid #000000;
+	width: 340px;height: 55px;
+	background-color: whitesmoke;
+}
+.dx_block::after{
+	content: "";
+	position: absolute;
+	display: block;
+	margin-left: 8px;
+	margin-top: -30px;
+	    width: 340px;
+	    height: 55px;
+	    background-color: #eee4c8;
+	    z-index: -1;
+		 }
+		 /* 箭头 */
+.jiantou{
+	font-size: 12px;
+	font-weight: bold;
+}
+.lt:before{
+	font-weight: bold;
+	font-size: 35px;
+	transition:1s;
+}
+.lt:hover{
+	transform: translate(10px);
+}
+.rt:before{
+	font-weight: bold;
+	font-size: 35px;
+	transition:1s;
+}
+.rt:hover{
+	transform: translate(-10px);
+}

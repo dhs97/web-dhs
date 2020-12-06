@@ -1,0 +1,93 @@
+function checkLoginState(tag) {
+  switch (tag){
+    case "facebook":
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      }, {scope: 'email'});
+      break;
+    case "weibo":
+    case "wechat":
+      urlCallBack(tag);
+      break;
+  }
+}
+
+function urlCallBack(tag)
+{
+  $.ajax({
+        type: "POST",
+        url: window.location.origin + "/api/get_social_setting",
+        data: {
+          "tag" : tag,
+        },
+        dataType: 'json',
+      }).done(function(result){
+        if (result.app_name == "error") {
+          alert(result.message);
+        } else {
+          var re_url = window.location.origin + "/auth/social_media_login";
+          switch (tag){
+            case "weibo":
+              url = "https://api.weibo.com/oauth2/authorize?client_id=" 
+                  + result.api_id + "&redirect_uri=" + re_url +"&response_type=code&scope=email&state=weibo"
+              window.open(url);
+              break;
+            case "wechat":
+              var url = "//res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js";
+              $.getScript( url, function() {
+                var obj = new WxLogin({
+                              self_redirect:false,
+                              id:"wechat_login_container",
+                              appid: result.api_id,
+                              scope: "snsapi_login",
+                              redirect_uri: re_url,
+                              state: "wechat",
+                              style: "",
+                              href: ""
+                          });
+              });
+              break;
+          }
+        }
+      }).fail(function(result){
+        alert("内部エラー");
+    });
+}
+
+// This is called with the results from from FB.getLoginStatus().
+function statusChangeCallback(response) {
+  if (response.status === 'connected') {
+    var access_token = response.authResponse.accessToken;
+    FB.api('/me', {fields: 'email'}, function(response) {
+      $.ajax({
+        type: "POST",
+        async: false,
+        url: window.location.origin + "/auth/social_media_login",
+        data: { 
+          "tag" : "facebook",
+          "response": response,
+          "access_token": access_token,
+        },
+        dataType: 'json',
+      }).done(function(result){
+          if (result.result == 'success') {
+            window.location = window.location.origin + "/auth/login";
+          } else if (result.result == 'unknown') {
+            alert("ユーザー情報見つかれません。");
+            window.location = window.location.origin + "/auth/login";
+          } else {
+            alert("連結エラー");
+          }
+      }).fail(function(result){
+        alert("内部エラー");
+      });
+    });
+
+  } else {
+    if (response.authResponse) {
+      FB.login(function(response) {
+          statusChangeCallback(response);
+        }, {scope: 'email'});
+    } 
+  }
+}

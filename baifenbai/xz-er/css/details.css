@@ -1,0 +1,401 @@
+/* .breadcrumb-item+.breadcrumb-item::before{
+	content: ">";
+}
+.my_img_1{
+	overflow: hidden;
+}
+.my_img_1>img{
+	transition: 1s;
+}
+.my_img_1>img:hover{
+	transform: scale(1.1);
+}
+
+.my_imgs{
+	width: 20%;
+}
+.my_imgs:hover{
+	border: 1px solid #ddd;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+.bg_gray{
+	background:linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
+	}
+.border_color {
+    font: 34px "simhei";
+    color: #0aa1ed;
+    font-family: Arial;
+}	
+.font_size{
+    margin-left: 4px;
+    margin-top: 8px;
+    font-size: 6px;
+    font-family: 黑体;
+}
+.btn{
+	border-radius: 0;
+}
+.btn-outline-secondary:hover {
+  color: #00A1ED;
+  background-color: transparent;
+  border-color: #00A1ED;
+}
+.my_btn_1{
+	width: 24px;height: 24px;
+	border:0;
+	outline: 0;
+	text-align: center;
+	font-size: 0.8rem;
+	}
+.my_btn1{
+	width: 2rem;height: 2rem;
+	border: 0;outline: 0;
+	font-size: 24px;
+	padding: 0;
+	line-height: 24px;
+	color: #000;
+}
+.btn-light{
+	    font: 24px "simhei";
+	    color: #0aa1ed;
+			background-color: #E8E8E8;
+	    font-family: Arial;
+}
+.btn-light:hover{
+	    font: 24px "simhei";
+	    color: #0aa1ed;
+	background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+	    font-family: Arial;
+}
+.btn-primary{
+	    font: 24px "simhei";
+	    font-family: Arial;
+}
+.btn-primary:hover{
+	    font: 24px "simhei";
+	    font-family: Arial;
+} */
+ul{
+	white-space: nowrap;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	white-space: nowrap;
+	
+}
+a{
+	text-decoration: none;
+	color: #404040;
+	font-size: 10px;
+	font-weight: bold;
+}
+a:hover{
+	text-decoration: none;
+	color: #404040;
+	font-size: 10px;
+	font-weight: bold;
+}
+.bg_lt{
+	padding-left: 20px;
+	line-height: 40px;
+	background-color: #F7F5F5;
+}
+body{
+	background-color: white;
+}
+*{margin: 0;padding: 0;}
+.border_solid{
+	border: 1px solid #C9C9C9;
+	margin: 20px;
+	padding: 20px;
+	overflow: hidden;
+}
+.border_solid_li{
+	border: 1px solid #C9C9C9;
+	margin: 24px 2%;
+	padding: 20px;
+	overflow: hidden;
+	box-shadow:inset #E8E8E8 1px 1px 7px 5px;
+}
+.float_left{
+	display: flex;
+	float: left;
+}
+.w_dx{
+	width: 100%;
+}
+.w_dx:hover{
+	opacity: 0.7;
+}
+.w_length{
+	width: 90%;
+	margin: 2px;
+	border: 1px solid white;
+}
+.w_length:active{
+	border: 1px solid red;
+}
+.w_length:focus{
+	border: 5px solid red;
+}
+
+
+.div_img{
+	width: 770px;
+	/* margin-right: 60px; */
+}
+.bottom{
+	overflow: hidden;
+}
+.top{ 
+	padding-top: 60px;
+}
+.u{
+	border-bottom: 1px solid #C9C9C9;
+	color: #404040;
+	line-height: 2rem;
+	white-space: nowrap;
+	
+}
+.bold{
+	font-size: 16px;
+	font-weight: bold;
+}
+div>p{
+	line-height: 1.5rem;
+	padding-bottom: 15px;
+}
+.padding{
+	padding: 15px 0;
+	
+}
+del{
+	font-size: 20px;
+}
+.font_32px{
+	font-weight: bold;
+	font-size: 32px;
+}
+.left{
+	font-size: 20px;
+	padding-left: 70px;
+}
+/* .bg_img_color{
+	width: 100%;
+	height: 6%;
+	background-color: F0F0F0;
+	line-height: 6%;
+	text-align: center;
+} */
+.img_dx{
+	width: 100%;
+}
+.iconfont{
+	margin-right: 15px;
+}
+.jiahao{
+	font-size: 10px;
+	font-weight: bold;
+	color: #FA6A00;
+	position: relative;
+	top: -8px;
+	left: 30px;
+}
+.line_height{
+	 position: relative;
+	 top: -3px;right: 10px;
+}
+.yangshi_g{
+		cursor: pointer;
+		width: 240px;
+		height: 50px;
+		border-radius: 5px;
+		color: white;
+		background-color: #FA6A00;
+		border: none;
+		font-size: 16px;
+		line-height: 50px;
+}
+.yangshi_g:active{
+	background-color: #CBB8AA;
+}
+.yangshi_g:focus{
+	outline: none;
+}
+.center{
+	color: #FA6A00;
+	text-align: center;
+	line-height: 4rem;
+	padding-bottom: 25px;
+}
+.left_80px{
+	padding-left: 80px;
+}
+.left_30pxw{
+	padding: 0 30px;
+}
+.left_80px>img{
+	width: 100px;
+}
+.left_30pxw>img{
+	width: 50px;
+}
+.left_30pxz>img{
+	width: 90px;
+}
+/* 开始 微信 qq空间 QQ */
+.tb_p{
+	padding-top: 30px;
+	text-align: center;
+}
+.top_top{
+	padding-top: 100px;
+	color: #404040;
+	background-color: #F3F3F3;
+	padding: 0 20px;
+}
+.weixin_bg{
+	border: 1px solid #7BC549;
+	border-radius: 50%; 
+}
+.qqkongjian_bg{
+	border: 1px solid #FDBE3D;
+	border-radius: 50%; 
+}
+.qq_bg{
+		border: 1px solid #56B6E7;
+		border-radius: 50%; 
+	}
+
+.weixin{
+	color: 7BC549;
+	
+}
+.qqkongjian{
+	color: FDBE3D;
+	
+}
+.qq{
+	color: 56B6E7;
+}
+/*结束 微信 qq空间 QQ */
+.tb_p>a{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.iconfont{
+	margin-left: 12px;
+}
+/*开始 标签 */
+.my_bttom_border{
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #404040;
+	width: 330px;
+	height: 55px;
+	line-height: 55px;
+	background-color: #EEE4C8;
+	margin: 0 auto;
+	z-index: 1;
+	margin-bottom: 60px;
+}
+.dx_block{ 
+	position: absolute;
+	top: -10px;left: -10px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: center;
+	width: 330px;height: 55px;
+  background-color: white;
+	z-index: 0;
+	
+}
+/* 标签结束 */
+.padding_60px{
+	
+	padding: 0 60px;
+}
+/*开始 用户信息 */
+
+.child{
+	margin-left: 6px;
+	color: white;
+}
+.child:before{
+	font-size: 10px;
+}
+.bg_bai{
+	display:block;
+	width: 25px;height: 25px;
+	background-color: #A0A0B4;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 25px;
+	font-size: 10px;
+}
+/*结束 用户信息 */
+.yangshi_y{
+		cursor: pointer;
+		width: 240px;
+		height: 50px;
+		border-radius: 0px;
+		color: white;
+		background-color: #444444;
+		border: none;
+		font-size: 16px;
+		line-height: 50px;
+}
+.yangshi_y:active{
+	background-color: white;
+	border-radius: 0px;
+	border: #444444;
+	color: #444444;
+	font-weight: bold;
+}
+.center_ceter{
+	padding-bottom: 100px;
+	text-align: center;
+}
+.color_FA7026{
+	font-weight: bold;
+	font-size: 18px;
+	color: #FA7026;
+	padding-left: 10px;
+}
+.color_xingixng{
+	color: gold;
+	font-size: 30px;
+	padding-left: 10px;
+}
+.size_dx{
+	font-size: 20px;
+	font-weight: bold;
+	color: #444444;
+}
+.size_mi{
+	padding: 0 15px;
+	font-size: 18px;
+	color: #444444;
+}
+/* 字体间隔 */
+.jiange{
+	line-height: 30px;
+}
+.size_16px{
+	font-size: 16px;
+}
+.color_xing{
+	color: gold;
+}
+/* 下拉菜单 */
+.top_p{
+	padding-top: 100px;
+}

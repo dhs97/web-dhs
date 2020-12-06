@@ -1,0 +1,83 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="../js/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" href="./mytest/iconfont.css">
+	</head>
+	<body>
+		<header>
+			<iframe class="my_header position-fixed ch" scrolling="no" src="hearder.1.html"></iframe>
+		</header>
+			<!-- 登录注册 -->
+			<div class="bg"><a class="sx" href="#">首页<span class="lt">&lt;</span>新会员注册</a></div>
+			<table class="border_1" border="1px" cellspacing="0">
+				<tr>
+					<th class="zc">登录</th>
+					<th class="dl">新会员注册</th>
+				</tr>
+				<tr>
+					<td class="d1" colspan="2">
+						<p class="top_p"><span>*</span>为必填项目</p>
+						<div class="fixed">
+							<h6 class="xia_1">姓<span>*</span></h6>
+						<input class="zh_1 input2" type="text" value="" />
+						<h6 class="xia_1">名<span>*</span></h6>
+						<input class="zh_1 input2" type="text" value="" />
+						</div>
+						<h4>请确认姓名和身份证一致</h4>
+							<h6 class="xia_4">国家/地区名<span>*</span></h6>
+						<input class="zh_4 input1" type="text" value="" />
+						<div class="fixed">
+							<h6 class="xia_3">出生日期<span>*</span></h6>
+						<input class="zh_3_3 input1" type="text" value="" /><span class="xiegang">/</span>
+						<input class="zh_3_3 input1" type="text" value="" /><span class="xiegang">/</span>
+						<input class="zh_3_3 input1" type="text" value="" />
+						</div>
+						<h6 class="xia_3">电话号码<span>*</span></h6>
+						<input class="zh_3 input3" type="text" value="" />
+						<h6 class="xia_6">电子邮箱地址<span>*</span></h6>
+						<input class="zh_2 input3" type="text" value="" /><br>
+						<h6 class="xia_2">市级<span>*</span></h6>
+						<input class="zh_2 input3" type="text" value="" /><br>
+						<h6 class="xia_2">街道<span>*</span></h6>
+						<input class="zh_2 input3" type="text" value="" /><br>
+						<h6 class="xia_5">邮政编码<span>*</span></h6>
+						<input class="zh_5 input2" type="text" value="" /><br>
+						<div class="fixed">
+							<h6 class="xia_1_2">密码<span>*</span></h6>
+							<input class="zh_1 input2" type="text" value="" />
+							<h6 class="xia_1_4">确认密码<span>*</span></h6>
+							<input class="zh_1_2 input2" type="text" value="" />
+						</div>
+						<h6 class="xia_2">身份证<span>*</span></h6>
+						<input class="zh_2 input3" type="text" value="" /><br>
+						<div id="app">
+								<p class="p">性别：</p>
+						    <label><input type="radio" name="sex" value="1" v-model="sex">男性</label>
+						    <label class="radio_O"><input class="radio_O" type="radio" name="sex" value="0" v-model="sex">女性</label>
+						  </div>
+						<button class="an_dl" type="submit">会员注册内容确认<span class="iconfont icon-youjiantou jiantou"></span></button>
+					</td>
+				</tr>
+				
+			</table>
+			<script>
+			    new Vue({
+			      el:"#app",
+			      data:{
+			        sex:0
+			      }
+			    })
+			  </script>
+			<footter>
+				<iframe class="my_footder" scrolling="no" src="footer.html"></iframe>
+			</footter>
+	</body>
